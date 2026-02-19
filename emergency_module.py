@@ -8,7 +8,7 @@ AUTH_TOKEN = os.getenv("TWILIO_AUTH_TOKEN")
 
 client = Client(ACCOUNT_SID, AUTH_TOKEN)
 
-TO_NUMBER = "+91 8861397007"
+TO_NUMBER = "+91 6362424502"
 FROM_NUMBER = "+1 413 493 2574"
 
 def get_location():
