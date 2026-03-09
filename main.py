@@ -80,9 +80,10 @@ while True:
         json.dump(dashboard_data, f)
 
     # Save frame for dashboard preview
-    cv2.imwrite("temp_frame.jpg", frame)
-    os.replace("temp_frame.jpg", "dashboard_frame.jpg")
-
+    try:
+        cv2.imwrite("dashboard_frame.jpg", frame.copy())
+    except:
+        pass
 
     # ---------------- UI DISPLAY ----------------
     cv2.putText(frame, f"Face Score: {face_score:.2f}", (10, 30),

@@ -138,7 +138,7 @@ st.subheader("📷 Live Camera Feed")
 if os.path.exists("dashboard_frame.jpg"):
     try:
         img = Image.open("dashboard_frame.jpg")
-        st.image(img, use_column_width=True)
+        st.image(img, use_container_width=700)
     except:
         st.warning("Camera frame loading...")
 else:
